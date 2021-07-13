@@ -1,0 +1,20 @@
+Opis biznesowy
+Aplikacja będzie obrazować uproszczoną pocztę tradycyjną.
+Czas obsługi klienta na naszej wyimaginowanej poczcie trwa 20 sekund.
+Niektórzy klienci mają pierwszeństwo w kolejce, tzw. „VIP”.
+Bywają też bardzo nagłe sytuacje, jak np. Święty Mikołaj wysyłający dzieciom prezenty. Tacy klienci są obsługiwani poza kolejnością. Wiąże się to jednak z wydłużeniem czasu obsługi takich klientów, do 40 sekund.
+
+System kolejkowy
+
+Opis aplikacji
+Rejestrator
+Na formularzu należy umożliwić użytkownikowi wpisanie pseudonimu i opcjonalne zaznaczenie opcji „VIP” lub „Nagły”. Wybranie jednej z tych opcji wymaga potwierdzenia kodem PIN. Po wysłaniu formularza, zostanie wygenerowany unikalny numer, który zostanie dodany do kolejki. Jeżeli użytkownik wybierze „VIP” lub „Nagły”:
+• VIP – jest automatycznie przesuwany na początek kolejki. Kolejny VIP jest dodawany za ostatnim VIPem.
+• Nagły – prowadzi do wejścia poza kolejnością.
+Wybranie pola dodatkowego „VIP”/”Nagły” wymaga autoryzacji poprzez wprowadzenie numeru PIN:
+• VIP – 8888,
+• Nagły – 0000.
+
+Monitoring kolejki
+Domyślnie prezentowana jest lista osób w kolejce, posortowana według kolejności uwzględniającej powyższe priorytety. Na liście wyświetlany jest numer nadany przez rejestrator oraz pseudonim. 
+Monitoring umożliwia sprawdzenie, ile osób jest przed danym użytkownikiem. Po wprowadzeniu numeru uzyskanego podczas rejestracji lub pseudonimu, prezentowana jest liczba osób w kolejce przed wybranym użytkownikiem oraz czas oczekiwania.
