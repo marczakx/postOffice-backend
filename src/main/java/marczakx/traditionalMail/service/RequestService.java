@@ -12,14 +12,18 @@ import marczakx.traditionalMail.repository.RequestRepository;
 public class RequestService {
 
 	private RequestRepository requestRepository;
+	private QueueService queueService;
 
 	@Autowired
-	public RequestService(RequestRepository requestRepository) {
+	public RequestService(RequestRepository requestRepository, QueueService queueService) {
 		this.requestRepository = requestRepository;
+		this.queueService = queueService;
 	}
 
-	public void addRequest(String pseudonym, Priority priority) {
-		Request request = new Request(pseudonym,priority,LocalDateTime.now());
-		requestRepository.save(request);
+	public Request addRequest(String pseudonym, Priority priority) {
+		Request request = new Request(pseudonym, priority, LocalDateTime.now());
+		request=requestRepository.save(request);
+		queueService.update();
+		return request;
 	}
 }
