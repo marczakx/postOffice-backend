@@ -21,8 +21,8 @@ public class RequestService {
 	}
 
 	public Request addRequest(String pseudonym, Priority priority) {
-		Request request = new Request(pseudonym, priority, LocalDateTime.now());
-		request=requestRepository.save(request);
+		Request request = Request.builder().pseudonym(pseudonym).priority(priority).time(LocalDateTime.now()).build();
+		request = requestRepository.save(request);
 		queueService.update();
 		return request;
 	}

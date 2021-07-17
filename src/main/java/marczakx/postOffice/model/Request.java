@@ -8,12 +8,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @AllArgsConstructor
+@Builder
 @NoArgsConstructor
 public class Request {
 
@@ -23,11 +25,5 @@ public class Request {
 	private String pseudonym;
 	private Priority priority;
 	private LocalDateTime time;
-
-	public Request(String pseudonym, Priority priority, LocalDateTime time) {
-		this.pseudonym = pseudonym;
-		this.priority = priority;
-		this.time = time;
-	}
 
 }
