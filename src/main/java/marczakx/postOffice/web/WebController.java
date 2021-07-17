@@ -1,4 +1,4 @@
-package marczakx.traditionalMail.web;
+package marczakx.postOffice.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import marczakx.traditionalMail.entity.Priority;
-import marczakx.traditionalMail.entity.Request;
-import marczakx.traditionalMail.service.QueueService;
-import marczakx.traditionalMail.service.QueueItem;
-import marczakx.traditionalMail.service.RequestService;
+import marczakx.postOffice.service.QueueService;
+import marczakx.postOffice.model.Priority;
+import marczakx.postOffice.model.Request;
+import marczakx.postOffice.service.QueueItem;
+import marczakx.postOffice.service.RequestService;
 
 @RestController
 @CrossOrigin

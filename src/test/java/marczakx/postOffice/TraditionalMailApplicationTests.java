@@ -1,10 +1,10 @@
-package marczakx.traditionalMail;
+package marczakx.postOffice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TraditionalMailApplicationTests {
+class PostOfficeApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package marczakx.traditionalMail.service;
+package marczakx.postOffice.service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -11,9 +11,10 @@ import org.mockito.Mock;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.doReturn;
 import org.mockito.junit.jupiter.MockitoExtension;
-import marczakx.traditionalMail.entity.Priority;
-import marczakx.traditionalMail.entity.Request;
-import marczakx.traditionalMail.repository.RequestRepository;
+
+import marczakx.postOffice.model.Priority;
+import marczakx.postOffice.model.Request;
+import marczakx.postOffice.repository.RequestRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class QueueServiceTests {

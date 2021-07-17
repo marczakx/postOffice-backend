@@ -1,4 +1,4 @@
-package marczakx.traditionalMail.entity;
+package marczakx.postOffice.model;
 
 public enum Priority {
 	NORMAL, VIP, SUDDEN

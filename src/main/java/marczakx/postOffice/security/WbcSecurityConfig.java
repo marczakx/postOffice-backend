@@ -1,4 +1,4 @@
-package marczakx.traditionalMail.security;
+package marczakx.postOffice.security;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

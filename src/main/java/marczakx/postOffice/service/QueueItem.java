@@ -1,9 +1,9 @@
-package marczakx.traditionalMail.service;
+package marczakx.postOffice.service;
 
 import java.time.LocalDateTime;
 
-import marczakx.traditionalMail.entity.Priority;
-import marczakx.traditionalMail.entity.Request;
+import marczakx.postOffice.model.Priority;
+import marczakx.postOffice.model.Request;
 
 public class QueueItem {
 	private final int SUDDEN_DELAY_IN_SECONDS = 40;

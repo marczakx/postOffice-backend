@@ -1,13 +1,13 @@
-package marczakx.traditionalMail;
+package marczakx.postOffice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TraditionalMailApplication {
+public class PostOffice {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TraditionalMailApplication.class, args);
+		SpringApplication.run(PostOffice.class, args);
 	}
 
 }
